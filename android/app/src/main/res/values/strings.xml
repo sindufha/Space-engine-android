@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Space Engine</string>
+    <string name="launcher_subtitle">v0.991.49.2095-p7 • arm64-v8a Static Recompilation</string>
+    <string name="storage_banner_text">All-files access is recommended to read the multi-GB data/ folder directly from storage.</string>
+    <string name="btn_grant_storage">Grant Storage Access</string>
+    <string name="label_exe_section">1. Engine Executable (SpaceEngine.exe)</string>
+    <string name="btn_select_exe">Select .exe</string>
+    <string name="status_exe_unselected">Not selected — pick system/SpaceEngine.exe</string>
+    <string name="status_validating_exe">Verifying PE32+ header and SHA-256...</string>
+    <string name="label_game_section">2. Game Asset Directory</string>
+    <string name="btn_select_game_files">Select Game Files</string>
+    <string name="status_dir_unselected">Not selected — pick root folder containing data/, config/, system/</string>
+    <string name="status_validating_dir">Checking data/shaders/Shaders.pak, Catalogs.pak &amp; config/...</string>
+    <string name="err_tree_path_resolve">Unable to resolve a direct storage path for this folder. Try selecting from Internal Storage.</string>
+    <string name="btn_start">Start</string>
+    <string name="status_starting">Initializing Engine…</string>
+    <string name="status_loading_splash">Launching SpaceEngine loading screen…</string>
+    <string name="btn_loading_stage_fmt">Loading Planetarium (%1$d/6)…</string>
+    <string name="landscape_viewport_fmt">Landscape Lock Active • %1$d × %2$d</string>
+    <string name="status_idle_hint">Select SpaceEngine.exe and the Game Files folder to enable Start.</string>
+    <string name="hud_toggle">HUD</string>
+    <string name="hud_keyboard">Keys</string>
+    <string name="hud_mode_look">Look</string>
+    <string name="hud_mode_orbit">Orbit</string>
+    <string name="hud_move_w">W ▲</string>
+    <string name="hud_move_s">S ▼</string>
+    <string name="hud_move_a">A ◀</string>
+    <string name="hud_move_d">D ▶</string>
+    <string name="hud_stop">Stop</string>
+    <string name="hud_center">Center</string>
+    <string name="hud_goto">Go To</string>
+    <string name="hud_find">Find</string>
+    <string name="hud_slow">Time -</string>
+    <string name="hud_pause">Pause</string>
+    <string name="hud_fast">Time +</string>
+</resources>

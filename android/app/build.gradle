@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'org.spaceengine.port'
+    compileSdk 34
+    ndkVersion '27.1.12297006'
+
+    defaultConfig {
+        applicationId 'org.spaceengine.port'
+        minSdk 29
+        targetSdk 34
+        versionCode 7
+        versionName '0.991.49.2095-p7'
+
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+
+        externalNativeBuild {
+            cmake {
+                cFlags '-std=c11 -O2 -Wall -Wextra'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        debug {
+            jniDebuggable true
+        }
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+            version '3.22.1'
+        }
+    }
+}

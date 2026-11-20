@@ -1,0 +1,45 @@
+# Original SpaceEngine game files & user data (root-anchored; do not track)
+/addons/
+/cache/
+/config/
+/data/
+/license/
+/system/
+/txt.txt
+
+# Offline recompilation / host-test tooling & analysis dumps (not part of APK build)
+/tools/
+/recomp/*.json
+/recomp/funcs.txt
+*.spv
+
+# Exclude all Markdown files (AGENTS.md, HANDOFF.md, PLAN.md, third-party docs, etc.) except README.md
+*.md
+!/README.md
+
+# Android / Gradle / CMake build outputs & local config
+/android/.gradle/
+/android/build/
+/android/app/build/
+/android/app/.cxx/
+/android/local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Compiled objects, binaries, logs, Python & IDE files (retain required Mesa Zink jniLibs)
+*.so
+!/android/app/src/main/jniLibs/arm64-v8a/*.so
+*.a
+*.o
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.log
+__pycache__/
+*.pyc
+.vscode/
+.idea/
