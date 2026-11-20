@@ -1,6 +1,6 @@
-# Space Engine (v0.991.49.2095-p7) — Static Recompilation & Native Android Port
+# Space Engine v0.1.0 — Android Port (SpaceEngine 0.991.49.2095)
 
-A static x86-64-to-C recompilation and native Android (`arm64-v8a`) compatibility layer for **SpaceEngine 0.991.49.2095 beta**, featuring a Win32/WGL-to-Android/EGL/Mesa Zink (OpenGL 4.6 over Vulkan) runtime shim and a native Android Launcher APK (`versionName 0.991.49.2095-p7`, `versionCode 7`).
+A static x86-64-to-C recompilation and native Android (`arm64-v8a`) compatibility layer for **SpaceEngine 0.991.49.2095 beta**, featuring a Win32/WGL-to-Android/EGL/Mesa Zink (OpenGL 4.6 over Vulkan) runtime shim and a native Android Launcher APK (`v0.1.0`, `versionCode 8`).
 
 > **Warning — No Game Files Included**: This repository and its GitHub Release APK contain **only** the recompiled compatibility runtime and Android launcher. **No SpaceEngine game files, `.pak` assets, or original Windows binaries (`SpaceEngine.exe`, DLLs) are included.** You must provide your own legitimate PC copy of **SpaceEngine `0.991.49.2095`** on your device.
 
@@ -14,7 +14,7 @@ A static x86-64-to-C recompilation and native Android (`arm64-v8a`) compatibilit
    - **GPU**: Vulkan 1.1+ and OpenGL ES 3.2+ support (OpenGL 4.6 runs over Vulkan via bundled Mesa Zink)
    - **Free Storage**: ~4.5 GB+ on **Internal Storage** for your SpaceEngine PC files
 2. **Release APK**
-   - Download the prebuilt APK from the **Releases** section on GitHub (`v0.991.49.2095-p7`), or build it yourself using the build instructions below.
+   - Download `SpaceEngine-v0.1.0.apk` from the **Releases** section on GitHub (`v0.1.0`), or build it yourself using the build instructions below.
 3. **SpaceEngine `0.991.49.2095` PC Files**
    - The exact matching `system/SpaceEngine.exe` (`9,062,400` bytes, SHA-256 `172154e9...aeb0d3` for v0.991.49.2095)
    - The root SpaceEngine game folder containing:
@@ -31,7 +31,7 @@ A static x86-64-to-C recompilation and native Android (`arm64-v8a`) compatibilit
 2. Open the downloaded `.apk` to install **Space Engine** (grant *"Install unknown apps"* permission to your browser/file manager if prompted).
    - Alternatively, install from PC via ADB:
      ```powershell
-     adb install -r app-debug.apk
+     adb install -r SpaceEngine-v0.1.0.apk
      ```
 
 ### Step 2: Copy Your SpaceEngine Game Files to Internal Storage
